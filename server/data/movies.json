@@ -3,7 +3,7 @@
     {
         "id": "movie1",
         "title": "Sinners",
-        "posterURL": "",
+        "posterURL": "a",
         "reviews": [
             {"text": "a"},
             {"text": "a"},
