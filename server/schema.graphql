@@ -1,0 +1,15 @@
+type Review{
+    text: String!
+}
+
+type Movie{
+    id: ID!
+    title: String!
+    posterURL: String!
+    reviews:[Review!]!
+}
+
+
+type Query {
+    getMovie(id: ID!): Movie
+}
