@@ -16,14 +16,14 @@
         "title": "Parasite",
         "posterURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
         "reviews": [
-            {"text": "a"},
-            {"text": "a"},
+            {"text": "damn that kid really has the worst birthdays huh"},
+            {"text": "morse code me by your name and i'll morse code you by mine"},
             {"text": "a"},
             {"text": "a"}
         ]
     },
     {
-        "id": "movie1",
+        "id": "movie3",
         "title": "Sinners",
         "posterURL": "",
         "reviews": [
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "id": "movie1",
+        "id": "movie4",
         "title": "Sinners",
         "posterURL": "",
         "reviews": [
@@ -45,7 +45,7 @@
         ]
     },
     {
-        "id": "movie1",
+        "id": "movie5",
         "title": "Sinners",
         "posterURL": "",
         "reviews": [
