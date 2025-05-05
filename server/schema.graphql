@@ -12,4 +12,5 @@ type Movie{
 
 type Query {
     getMovie(id: ID!): Movie
+    getAllMovieIds: [ID!]!
 }

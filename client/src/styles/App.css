@@ -1,42 +1,104 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* src/styles/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #14181c;
+  color: #e0e0e0; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-top: 40px; 
+}
+
+.App {
   text-align: center;
+  width: 100%;
+  max-width: 900px; 
+  padding: 0 20px; 
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+button {
+  background-color: #00b020; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin: 5px;
+}
+
+button:hover:not(:disabled) {
+  background-color: #00c040;
+}
+
+button:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+button:disabled {
+  background-color: #556677;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+input[type="text"] {
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #445566;
+  background-color: #2c3440;
+  color: #e0e0e0;
+  margin-right: 10px; /* Space between input and button */
+  min-width: 250px; /* Ensure input is reasonably wide */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #00e054;
+    box-shadow: 0 0 0 2px rgba(0, 224, 84, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
   }
-  to {
-    transform: rotate(360deg);
+
+  input[type="text"] {
+    min-width: 0; 
+    width: calc(100% - 32px); 
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .input-area form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .input-area button {
+      width: 80%; 
+      max-width: 250px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

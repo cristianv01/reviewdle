@@ -2,19 +2,19 @@
 
     {
         "id": "movie1",
-        "title": "Sinners",
-        "posterURL": "a",
+        "title": "Goodfellas",
+        "posterURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/oErEczcVUmJm0EPdvWsvK4g4Lv3.jpg",
         "reviews": [
-            {"text": "a"},
-            {"text": "a"},
-            {"text": "a"},
-            {"text": "a"}
+            {"text": "Name a more iconic trio...I’ll wait."},
+            {"text": "sometimes a diva has to watch movies about gangsters, guns, and all that man stuff"},
+            {"text": "i love it. maybe i’m a middle aged italian man at heart"},
+            {"text": "idk man there were some pretty bad fellas in this one"}
         ]
     },
     {
         "id": "movie2",
         "title": "Parasite",
-        "posterURL": "",
+        "posterURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
         "reviews": [
             {"text": "a"},
             {"text": "a"},

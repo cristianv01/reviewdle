@@ -23,9 +23,9 @@ const resolvers = {
         console.log(`Found movie: ${movie ? movie.title : 'None'}`); 
         return movie;
       },
-    //   getAllMovieIds: () => {
-    //     return moviesData.map(movie => movie.id);
-    //   }
+      getAllMovieIds: () => {
+        return moviesData.map(movie => movie.id);
+      }
     },
  
 };

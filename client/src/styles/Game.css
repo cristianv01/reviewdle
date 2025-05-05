@@ -1,0 +1,86 @@
+/* src/styles/Game.css */
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .input-area {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .input-area form {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+  }
+  
+  .result-area {
+    margin-top: 40px;
+    padding: 25px 30px;
+    background-color: #2c3440;
+    border-radius: 8px;
+    border: 1px solid #445566;
+    width: 90%;
+    max-width: 450px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    animation: fadeInResult 0.5s 0.1s ease-out forwards;
+  }
+  
+  @keyframes fadeInResult {
+    from {
+      opacity: 0;
+      transform: translateY(10px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .result-area h2 {
+    color: #00e054;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+  
+  .result-area h3 {
+      color: #ffffff;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      font-weight: 500;
+  }
+  
+  .result-area img {
+    display: block;
+    max-width: 60%;
+    height: auto;
+    border-radius: 6px;
+    margin: 0 auto 20px auto;
+    border: 2px solid #445566;
+  }
+  
+  .game-container p {
+      font-size: 1.1em;
+      color: #a0a0a0;
+      margin-top: 40px;
+  }
+  

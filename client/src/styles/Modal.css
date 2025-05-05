@@ -1,0 +1,86 @@
+/* src/styles/Modal.css */
+
+.modal-overlay {
+    position: fixed; /* Sit on top of the page content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+    z-index: 1000; /* Specify a stack order */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start hidden */
+    animation: fadeInOverlay 0.3s ease forwards;
+  }
+  
+  @keyframes fadeInOverlay {
+      to { opacity: 1; }
+  }
+  
+  .modal-content {
+    background-color: #2c3440; /* Dark background for modal */
+    color: #e0e0e0;
+    padding: 30px 40px;
+    border: 1px solid #445566;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px; /* Maximum width */
+    position: relative; /* For positioning the close button */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95); /* Start slightly smaller */
+    opacity: 0;
+    animation: fadeInModalContent 0.4s 0.1s ease-out forwards; /* Delay modal animation slightly */
+  }
+  
+  @keyframes fadeInModalContent {
+      to {
+          opacity: 1;
+          transform: scale(1);
+      }
+  }
+  
+  
+  .modal-content h2 {
+    margin-top: 0;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    background: none;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .modal-start-button {
+      display: block; /* Make button block level */
+      width: 60%;
+      margin: 25px auto 0 auto; /* Center button with top margin */
+      padding: 12px 20px;
+      font-size: 1.1em;
+  }
+  
+  
