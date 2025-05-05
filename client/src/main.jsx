@@ -11,8 +11,12 @@ import {
 import './styles/index.css'
 import App from './components/App.jsx'
 
+const backendUrl = import.meta.env.VITE_GRAPHQL_ENDPOINT || 'http://localhost:4000/'; 
+
+console.log("Using GraphQL Endpoint:", backendUrl); 
+
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000'
+  uri: backendUrl
 });
 
 const client = new ApolloClient({
