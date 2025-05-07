@@ -21,38 +21,6 @@
             {"text": "Yeah I respect capitalism’s rights... capitalism’s rights to shut up"},
             {"text": "Woh, that kid is going to need a much bigger trauma recovery cake."}
         ]
-    },
-    {
-        "id": "movie3",
-        "title": "Sinners",
-        "posterURL": "",
-        "reviews": [
-            {"text": ""},
-            {"text": ""},
-            {"text": ""},
-            {"text": ""}
-        ]
-    },
-    {
-        "id": "movie4",
-        "title": "Sinners",
-        "posterURL": "",
-        "reviews": [
-            {"text": ""},
-            {"text": ""},
-            {"text": ""},
-            {"text": ""}
-        ]
-    },
-    {
-        "id": "movie5",
-        "title": "Sinners",
-        "posterURL": "",
-        "reviews": [
-            {"text": ""},
-            {"text": ""},
-            {"text": ""},
-            {"text": ""}
-        ]
     }
+
 ]
